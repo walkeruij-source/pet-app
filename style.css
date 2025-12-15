@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  background: #f6efe3;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  max-width: 420px;
+  margin: auto;
+  padding: 12px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.coins {
+  background: #ffdca0;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.screen {
+  background: #fff3e6;
+  border-radius: 18px;
+  padding: 12px;
+}
+
+.pet-area {
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pet-img {
+  width: 220px;
+  animation: breathe 4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+.pet-bubble {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 10px;
+  background: white;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.btn {
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}

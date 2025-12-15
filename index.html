@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Мой питомник</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- Верхняя панель -->
+    <div class="topbar">
+      <div class="level">Питомник • День <span id="day">1</span></div>
+      <div class="coins" id="coins">0 🟊</div>
+    </div>
+
+    <!-- Экран -->
+    <div class="screen">
+      <div class="pet-area">
+
+        <div class="pet-bubble" id="bubble">
+          Всё хорошо
+        </div>
+
+        <div class="pet">
+          <img
+            src="assets/dog_open.png"
+            class="pet-img"
+            id="petImg"
+            alt="Питомец"
+          >
+        </div>
+
+        <div class="tooltip" id="petName">Бублик</div>
+      </div>
+
+      <!-- Кнопки -->
+      <div class="actions">
+        <div class="btn" data-action="feed">🥣 Покормить</div>
+        <div class="btn" data-action="wash">🛁 Помыть</div>
+        <div class="btn" data-action="play">🎾 Поиграть</div>
+        <div class="btn" data-action="sleep">🌙 Отдохнуть</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Telegram WebApp SDK -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
